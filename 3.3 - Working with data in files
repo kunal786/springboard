@@ -1,0 +1,40 @@
+'sliderule_dsi_json_exercise':
+
+# import necessary packages
+import pandas as pd
+import json
+from pandas.io.json import json_normalize
+
+# load json file in the exercise as string
+world_bank_json_str = json.load((open('data/world_bank_projects.json')))
+world_bank_json_str
+
+# load json as pandas dataframe
+world_bank_json_df = pd.read_json('data/world_bank_projects.json')
+world_bank_json_df
+
+# Part 1 Solution - Find the 10 countries with most projects
+world_bank_json_df.countryshortname.value_counts().head(10)
+
+# Part 2 Solution - Find the top 10 major project themes (using column 'mjtheme_namecode')
+major_themes_json = json_normalize(world_bank_json_str, 'mjtheme_namecode')
+major_themes_df = pd.DataFrame(major_themes_json)
+major_themes_df.name.value_counts().head(10)
+
+# Part 3:
+#major_themes_json.sort_values(by = 'code')
+major_themes_json = json_normalize(world_bank_json_str, 'mjtheme_namecode')
+major_themes_json1 = major_themes_json.sort_values(by = 'code')
+major_themes_json1.head(10)
+
+major_themes_df.code.value_counts()
+
+major_themes_json = json_normalize(world_bank_json_str, 'mjtheme_namecode')
+major_themes_json_sorted = major_themes_json.sort_values(by = 'code')
+major_themes_json_sorted2 = major_themes_json_sorted.fillna(method = 'pad', axis = 1)
+major_themes_json_sorted2[major_themes_json_sorted2.code == '1']
+
+major_themes_df_sorted = major_themes_df.sort_values(by = 'code')
+major_themes_df_sorted
+major_themes_df_sorted2 = major_themes_df_sorted.fillna(method = 'ffill')
+major_themes_df_sorted2[major_themes_df_sorted2.code == '1']
