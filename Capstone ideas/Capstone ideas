@@ -1,4 +1,5 @@
 Capstone Project Ideas:
+
 1. Extracting location information from unstructured data
 The goal of this project is to perform text mining on unstructured data such as news articles regarding terrorism events and extract location information such as the country, city, street address etc. of where the event took place. The accuracy should be at least 80%. I am open to using any open source tool along with Python to solve this problem. 
 Data: Data obtained using a web scraping tool such as webhose.io
@@ -7,7 +8,17 @@ Data: Data obtained using a web scraping tool such as webhose.io
 This project consists of crime data for Chicago from 2001 to 2017. The crime data include reported incidents with the exception of murders. There are a total of 22 attributes and more than 6 million records. My plan is to build a model to predict crime rates for some recent years such as 2015 or 2016. I also plan to create some visualization based on the results obtained.
 Datasource: Kaggle (https://www.kaggle.com/currie32/crimes-in-chicago)
 
-3. Performing Big Data Analysis on a NOSQL database
+3. CFPB Consumer Complaint Database - Predicting whether a customer will dispute or not
+The Consumer Complaint Database contains data from the complaints received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, including bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans, and other types of consumer credit. The database contains over 100,000 anonymized complaints and is refreshed daily. Data available about each complaint includes the name of the provider, type of complaint, date, zip code, and other information. 
+My plan is to build a model using this data to predict whether the customer will dispute or not. There is lot of interesting information and I plan to create some new features as well.
+Datasource: Government Data (https://catalog.data.gov/dataset/consumer-complaint-database#topic=consumer_navigation)
+
+4. Credit Card Fraud Detection - Prediction of Credit Card Fraud 
+The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+Datasource: Kaggle (https://www.kaggle.com/dalpozz/creditcardfraud)
+
+5. Performing Big Data Analysis on a NOSQL database
 This project deals with performing some kind of big data analysis using tools such as Hadoop, Spark etc. on a NOSQL database such as MongoDB, Cassandra etc. I am not sure exactly what I can do. I am open to suggestions. Here are some potential data sources:
+Datasources:
 https://www.lendingclub.com/info/download-data.action
 http://www.econ.yale.edu/~shiller/data.htm
