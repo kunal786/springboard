@@ -1,24 +1,47 @@
 Capstone Project Ideas:
 
 1. Extracting location information from unstructured data
-The goal of this project is to perform text mining on unstructured data such as news articles regarding terrorism events and extract location information such as the country, city, street address etc. of where the event took place. The accuracy should be at least 80%. I am open to using any open source tool along with Python to solve this problem. 
+The goal of this project is to perform text mining on unstructured data such as news articles regarding terrorism events and extract location information such as the country, city, street address etc. of where the event took place. 
+The accuracy should be at least 80%. I am open to using any open source tool along with Python to solve this problem. 
 Data: Data obtained using a web scraping tool such as webhose.io
 
 2. Predicting crimes in Chicago
-This project consists of crime data for Chicago from 2001 to 2017. The crime data include reported incidents with the exception of murders. There are a total of 22 attributes and more than 6 million records. My plan is to build a model to predict crime rates for some recent years such as 2015 or 2016. I also plan to create some visualization based on the results obtained.
+This project consists of crime data for Chicago from 2001 to 2017. The crime data include reported incidents with the exception of murders. 
+There are a total of 22 attributes and more than 6 million records. My plan is to build a model to predict crime rates for some recent years such as 2015 or 2016. 
+I also plan to create some visualization based on the results obtained.
 Datasource: Kaggle (https://www.kaggle.com/currie32/crimes-in-chicago)
 
 3. CFPB Consumer Complaint Database - Predicting whether a customer will dispute or not
-The Consumer Complaint Database contains data from the complaints received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, including bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans, and other types of consumer credit. The database contains over 100,000 anonymized complaints and is refreshed daily. Data available about each complaint includes the name of the provider, type of complaint, date, zip code, and other information. 
+The Consumer Complaint Database contains data from the complaints received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, including bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans, and other types of consumer credit. 
+The database contains over 100,000 anonymized complaints and is refreshed daily. Data available about each complaint includes the name of the provider, type of complaint, date, zip code, and other information. 
 My plan is to build a model using this data to predict whether the customer will dispute or not. There is lot of interesting information and I plan to create some new features as well.
 Datasource: Government Data (https://catalog.data.gov/dataset/consumer-complaint-database#topic=consumer_navigation)
 
 4. Credit Card Fraud Detection - Prediction of Credit Card Fraud 
-The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. 
+The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
 Datasource: Kaggle (https://www.kaggle.com/dalpozz/creditcardfraud)
 
 5. Performing Big Data Analysis on a NOSQL database
-This project deals with performing some kind of big data analysis using tools such as Hadoop, Spark etc. on a NOSQL database such as MongoDB, Cassandra etc. I am not sure exactly what I can do. I am open to suggestions. Here are some potential data sources:
+This project deals with performing some kind of big data analysis using tools such as Hadoop, Spark etc. on a NOSQL database such as MongoDB, Cassandra etc. 
+I am not sure exactly what I can do. I am open to suggestions. Here are some potential data sources:
 Datasources:
 https://www.lendingclub.com/info/download-data.action
 http://www.econ.yale.edu/~shiller/data.htm
+
+6. Understand relationship between stolen guns and crime incidents in various states
+This project is about building a predictive model or performing some kind of unsupervised learning such as clustering to understand the correlation/relationship between stolen guns and criminal activities.
+Missing Pieces is “a yearlong investigation by The Trace and more than a dozen NBC TV stations [that has] identified more than 23,000 stolen firearms recovered by police between 2010 and 2016 — the vast majority connected with crimes.” 
+To support the investigation, the reporters obtained more than 800,000 records of stolen and recovered guns, which they’ve standardized into a single CSV file and supplemented with a data dictionary. 
+The dataset “contains nearly complete stolen-gun records for the states of California and Florida, both of which have centralized collections of gun-theft data,” as well as records from nearly 300 other agencies across the country.
+Datasource:
+https://www.thetrace.org/missing-pieces-data/
+
+7. Analyzing Integrated Database (IDB) to explore civil cases
+This project is about reviewing information for civil cases for a few year and coming up with some interesting analyses. There is lot of data available.
+The U.S. Federal Judicial Center’s “Integrated Data Base” contains a longitudinal record of all federal criminal, civil, and appellate court cases going back to the 1970s, as well as bankruptcy cases going back to late 2007. 
+Each dataset contains dozens of detailed fields — including each case’s jurisdiction, name, docket number, relevant legal statutes, and more — accompanied by explanatory codebooks. 
+You can download single-year snapshots and cumulative files, or interactively select specific slices of data to export.
+Datasource:
+https://www.fjc.gov/research/idb
+https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201970-1987.pdf (Civil Codebook)
